@@ -1,0 +1,52 @@
+.search-part .search-box {
+  position: relative;
+  width: 400px;
+  margin: 80px auto 0;
+  
+}
+/* 搜索栏部分 */
+.search-part .search-box input[type='text'] {
+  width: 400px;
+  height: 36px;
+  padding-left: 30px;
+  border: 3px solid #F00;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.search-part .search-box input[type='button'] {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+.search-part .search-box input[type='button']:active {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* 输出面板部分 */
+.search-part .search-panel {
+  margin: 50px auto 0;
+
+  width: 250px;
+  height: 250px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.search-part .search-panel .response {
+  text-align: center;
+  color: #FFF;
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+}
+.search-part .search-panel .img {
+  display: block;
+  width: 100%;
+}

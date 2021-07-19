@@ -1,10 +1,7 @@
 html {
   font-family: 'microsoft yahei';
 }
-/* .login-part {
-  height: 100vh;
-  background-color: 
-} */
+
 .login-part .logo {
   display: block;
   width: 30%;
@@ -40,7 +37,7 @@ html {
   margin-top: 25px;
   text-align: center;
 }
-.login-part .login-box input {
+.login-part .login-box .panel input {
   width: 80%;
   height: 30px;
   margin: 20px 0;
@@ -51,13 +48,13 @@ html {
   background-position: 5px 2px;
   background-size: 26px auto;
 }
-.login-part .login-box input[type='text'] {
+.login-part .login-box .panel input[type='text'] {
   background-image: url(../img/icon/yonghuming-b.png);
 }
-.login-part .login-box input[type='password'] {
+.login-part .login-box .panel input[type='password'] {
   background-image: url(../img/icon/mima-b.png);
 }
-.login-part .login-box input[type='button'] {
+.login-part .login-box .panel input[type='button'] {
   width: 50%;
   height: 40px;
   padding: 0;
