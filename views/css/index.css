@@ -1,0 +1,91 @@
+html {
+  font-family: 'microsoft yahei';
+}
+.bg {
+  position:relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* nav-part */
+/* 给容器定高 */
+.bg nav {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.bg nav ul {
+  height: 80%;
+  display: flex;
+}
+.bg nav ul > li {
+  position: relative;
+  line-height: 80px;
+  text-align: center;
+  font-size: 18px;
+  width: 200px;
+}
+/* 鼠标移入后有一个效果 */
+.bg nav ul > li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.bg nav ul > li a{
+  color: #FFF;
+  font-weight: 700;
+}
+/* 下拉菜单 */
+.bg nav ol {
+  position: absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 80px;
+}
+.bg nav ol > li {
+  width: 200px;
+  line-height: 30px;
+  color: #FFF;
+}
+.bg nav ol > li:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+/* 下拉效果 */
+.bg nav ul > li:hover > ol {
+  display: block;
+}
+/* nav-part end */
+
+/* ball-part */
+.ball-part {
+  /* 当脱离文档流后块状不再默认独占一行 */
+  width: 100%;
+  position: absolute;
+  /* background-color: red; */
+  bottom: 50px;
+}
+.bg .ball-part ul {
+  display: flex;
+  justify-content: space-between;
+}
+.bg .ball-part ul > li {
+  width: 170px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 20px 0 10px 0;
+  box-sizing: border-box;
+}
+.bg .ball-part ul > li img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px #000;
+}
+.bg .ball-part ul > li a {
+  color: #FFF;
+  display: inline-block;
+  padding: 10px 0;
+}

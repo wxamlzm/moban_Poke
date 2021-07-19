@@ -1,0 +1,22 @@
+.list-part h1 {
+  text-align: center;
+}
+.list-part table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center;
+}
+/* 给所有的th和td加边框 */
+.list-part table th,td {
+  border: 1px solid black;
+}
+.list-part table th:nth-child(1) {
+  width: 100px;
+}
+.list-part table th:nth-child(2) {
+  width: 150px;
+}
+.list-part table th:nth-child(3) {
+  width: 150px;
+}

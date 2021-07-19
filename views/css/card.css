@@ -1,0 +1,27 @@
+.card-part .l3 {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.card-part ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card-part ul li {
+  /* 不放大缩小固定宽度 */
+  flex: 0 0 170px;
+  text-align: center;
+  border: 3px solid #000;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card-part ul li img {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}

@@ -1,0 +1,72 @@
+html {
+  font-family: 'microsoft yahei';
+}
+/* .login-part {
+  height: 100vh;
+  background-color: 
+} */
+.login-part .logo {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+.login-part .login-box {
+  width: 30%;
+  height: 300px;
+  border: 3px solid #F00;
+  margin: 0 auto;
+  margin-top: 60px;
+  background-color: rgba(0,0,0,0.7);
+}
+.login-part .login-box::before {
+  content: '';
+  display: table;
+}
+/* head 头像部分 */
+.login-part .login-box .head {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: -40px;
+  overflow: hidden;
+}
+.login-part .login-box .head img {
+  display: block;
+  width: 100%;
+}
+/* panel区域 */
+.login-part .login-box .panel {
+  margin-top: 25px;
+  text-align: center;
+}
+.login-part .login-box input {
+  width: 80%;
+  height: 30px;
+  margin: 20px 0;
+  padding-left: 35px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: 5px 2px;
+  background-size: 26px auto;
+}
+.login-part .login-box input[type='text'] {
+  background-image: url(../img/icon/yonghuming-b.png);
+}
+.login-part .login-box input[type='password'] {
+  background-image: url(../img/icon/mima-b.png);
+}
+.login-part .login-box input[type='button'] {
+  width: 50%;
+  height: 40px;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFF;
+  background-color: rgba(0,0,0,0.7);
+  cursor: pointer;
+}
+.login-part .login-box input[type='button']:hover {
+  background-color: rgba(0,0,0,0.9);
+}
