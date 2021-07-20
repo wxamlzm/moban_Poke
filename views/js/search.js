@@ -19,14 +19,26 @@ function showPoke(searchVal){
   panel.innerHTML = '';
   // 进行输入数据的判断
   if (searchVal == ''){
-    panel.innerHTML = '<p class="response">请输入信息</p>'
+    panel.innerHTML = '<p class="response">请输入信息</p>';
   }else if (isNaN(searchVal)){
     // 为true 证明输入的是文字,匹配名字
     for(let i = 0; i < data.length; i++){
       if(searchVal == data[i].name){
-        panel.innerHTML = `<img src='./img/poke/${data[i].id}.png' class='img'>`
+        panel.innerHTML = `<img src='./img/poke/${data[i].id}.png' class='img'>`;
+        return;
       }
     }
-  }//待完善
-
+    panel.innerHTML = '<p class="response">请输入正确名称</p>';
+  }else{
+    // 为false 证明输入的是数字型， 匹配ID
+    for(let i = 0; i < data.length; i++){
+      console.log(searchVal, data[i].id);
+      if(searchVal == data[i].id){
+        console.log(1);
+        panel.innerHTML = `<img src='./img/poke/${data[i].id}.png' class='img'>`;
+        return;
+      }
+    }
+    panel.innerHTML = '<p class="response">请输入正确的ID</p>';
+  }
 }
