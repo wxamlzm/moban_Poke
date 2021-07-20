@@ -32,7 +32,6 @@ function showPoke(searchVal){
   }else{
     // 为false 证明输入的是数字型， 匹配ID
     for(let i = 0; i < data.length; i++){
-      console.log(searchVal, data[i].id);
       if(searchVal == data[i].id){
         console.log(1);
         panel.innerHTML = `<img src='./img/poke/${data[i].id}.png' class='img'>`;
