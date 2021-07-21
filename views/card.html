@@ -6,9 +6,7 @@
   <link rel="stylesheet" href="./css/cssReset.css">
   <link rel="stylesheet" href="./css/card.css">
   <script src="./js/data.js"></script>
-  <style>
-
-  </style>
+  <script src="./js/card.js"></script>
 </head>
 <body>
   <div class="card-part">
@@ -20,17 +18,4 @@
     </div>
   </div>
 </body>
-<script>
-  let mycard = document.getElementById('mycard');
-  let str = '';
-  for(var i = 0; i < data.length; i++){
-    str += `
-      <li>
-        <img src="./img/poke/${data[i].id}.png" alt="">
-        <p>${data[i].name}</p>
-      </li>
-    `
-  }
-  mycard.innerHTML = str;
-</script>
 </html>
