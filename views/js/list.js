@@ -2,7 +2,7 @@ window.onload = function(){
   let poke = document.getElementById('poke');
   let strData = '';
   
-  for(let i = 1; i < data.length; i++){
+  for(let i = 0; i < data.length; i++){
   
     strData += `
       <tr>
